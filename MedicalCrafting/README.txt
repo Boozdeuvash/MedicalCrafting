@@ -1,6 +1,7 @@
-RIMWORLD PHARMA
+MEDICAL CRAFTING
+A small mod for Rimworld
 
-Currently supported version: Alpha 13
+Currently supported Rimworld version: Alpha 13
 
 ***
 
