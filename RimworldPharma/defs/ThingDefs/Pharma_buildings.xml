@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+
+	<ThingDef Name="BuildingBase" Abstract="True">
+		<category>Building</category>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<selectable>true</selectable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<repairEffect>Repair</repairEffect>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<filthLeaving>BuildingRubble</filthLeaving>
+	</ThingDef>
+	
+
+	
+	<!-- ********* BASIC BUILDINGS *********** -->
+	
+	<ThingDef ParentName="BuildingBase">
+		<DefName>PharmaBench</DefName>
+		<label>Pharmaceutical Bench</label>
+		<ThingClass>Building_WorkTable</ThingClass>
+		<Description>A bench with specialized tools to craft medicine</Description>
+		<graphicData>
+			<texPath>Things/Building/Production/ResearchBenchSimple</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(5,4)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<CostList>
+		  <WoodLog>50</WoodLog>
+		  <Steel>50</Steel>
+		</CostList>
+		<constructEffect>ConstructWood</constructEffect>
+		<AltitudeLayer>Waist</AltitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+		  <WorkToMake>4000</WorkToMake>
+		  <MaxHitPoints>180</MaxHitPoints>
+		  <Flammability>1.0</Flammability>
+		  <Cleanliness>-3</Cleanliness>
+		</statBases>
+		<Size>(3,2)</Size>
+		<DesignationCategory>Production</DesignationCategory>
+		<Passability>PassThroughOnly</Passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<recipes>
+			<li>PharmaMakeMedicine</li>
+			<li>PharmaMakeMedTools</li>
+		</recipes>
+		<inspectorTabs>
+		  <li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+		  <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<researchPrerequisites>
+			<li>PharmaMedicineProduction</li>
+        </researchPrerequisites>
+	</ThingDef>
+	
+	
+	
+	<ThingDef ParentName="BuildingBase">
+		<DefName>PharmaAdvBench</DefName>
+		<label>Advanced Pharmaceutical Bench</label>
+		<ThingClass>Building_WorkTable</ThingClass>
+		<Description>Workshop equiped with advanced tools and laboratory equipment, in order to produce Glitterworld medicine and its contents</Description>
+		<graphicData>
+		  <texPath>Things/Building/Production/ResearchBenchHiTech</texPath>
+		  <graphicClass>Graphic_Multi</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		  <drawSize>(7,4)</drawSize>
+		  <damageData>
+			<cornerTL>Damage/Corner</cornerTL>
+			<cornerTR>Damage/Corner</cornerTR>
+			<cornerBL>Damage/Corner</cornerBL>
+			<cornerBR>Damage/Corner</cornerBR>
+		  </damageData>
+		</graphicData>
+		<CostList>
+		  <WoodLog>50</WoodLog>
+		  <Steel>50</Steel>
+		</CostList>
+		<constructEffect>ConstructWood</constructEffect>
+		<AltitudeLayer>Waist</AltitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+		  <WorkToMake>4000</WorkToMake>
+		  <MaxHitPoints>180</MaxHitPoints>
+		  <Flammability>1.0</Flammability>
+		  <Cleanliness>-3</Cleanliness>
+		</statBases>
+		<Size>(5,2)</Size>
+		<DesignationCategory>Production</DesignationCategory>
+		<comps>
+			<li Class="CompProperties_Power">
+			<compClass>CompPowerTrader</compClass>
+			<basePowerConsumption>250</basePowerConsumption>
+			<startElectricalFires>true</startElectricalFires>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+		</comps>
+      
+		<Passability>PassThroughOnly</Passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<recipes>
+			<li>PharmaMakeProtequaline</li>
+			<li>PharmaMakeAdvMedTools</li>
+			<li>PharmaMakeAmetrusol</li>
+			<li>PharmaMakeGlitterworldMedicine</li>
+		</recipes>
+		<inspectorTabs>
+		  <li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+		  <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<researchPrerequisites>
+			<li>PharmaGlitterworldMedicine</li>
+        </researchPrerequisites>
+	</ThingDef>
+</ThingDefs>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+<ThingDef ParentName="ResourceBase">
+    <defName>PharmaMedTools</defName>
+    <label>Medical Tools</label>
+    <description>Scissors, clamps, stiches, braces... All sorts of tools needed for proper treatment of injuries</description>
+    <graphicData>
+      <texPath>Items/medtools</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>50</stackLimit>
+    <statBases>
+      <MaxHitPoints>70</MaxHitPoints>
+      <MarketValue>8</MarketValue>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>PharmaAdvMedTools</defName>
+    <label>Advanced Medical Tools</label>
+    <description>Self-sterilizing tools, powered precision smart drills, autocoagulating internal stiches... Most of this stuff is downright indistinguishable from wizardry.</description>
+    <graphicData>
+      <texPath>Items/advmedtools</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>50</stackLimit>
+    <statBases>
+      <MaxHitPoints>70</MaxHitPoints>
+      <MarketValue>20</MarketValue>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+  </ThingDef>
+  
+    <ThingDef ParentName="ResourceBase">
+    <defName>PharmaAmetrusol</defName>
+    <label>Ametrusol</label>
+    <description>Probably the strongest natural antibiotics in the Rimworlds, the efficieny of this miracle substance rivals the nanomedicine used the Glitterworlds' pharmaceutical industries. Unfortunately, it is exclusively produced by Giant Bugs as part of their immune system, and can only be found in small concentration in their Jelly</description>
+    <graphicData>
+      <texPath>Items/Ametrusol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>50</stackLimit>
+    <statBases>
+      <MaxHitPoints>70</MaxHitPoints>
+      <MarketValue>25</MarketValue>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>PharmaProtequaline</defName>
+    <label>Protequaline</label>
+    <description>A highly refined cocktail of anti-inflamatory drugs, anesthesics, and anti-convulsive substances; extracted from the common Desert Agave.  Administered intravenously. Apparently tastes just like Tequila. Please seek medical attention if ingested.</description>
+    <graphicData>
+      <texPath>Items/Protequaline</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>50</stackLimit>
+    <statBases>
+      <MaxHitPoints>70</MaxHitPoints>
+      <MarketValue>25</MarketValue>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+  </ThingDef>
+  
+  </Defs>

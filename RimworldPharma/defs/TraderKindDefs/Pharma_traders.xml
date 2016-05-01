@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DefPackage-TraderKindDef>
+ 
+
+ <TraderKindDef>
+    <defName>Pharma_OrbitalPharma</defName>
+    <label>Pharmaceutics Merchant</label>
+    <orbital>true</orbital>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>
+          <min>4000</min>
+          <max>6000</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_Category">
+        <categoryDef>Medicine</categoryDef>
+        <thingDefCountRange>
+          <min>3</min>
+          <max>6</max>
+        </thingDefCountRange>
+        <totalPriceRange>
+          <min>2200</min>
+          <max>4000</max>
+        </totalPriceRange>
+      </li>
+    </stockGenerators>
+  </TraderKindDef>
+  
+  </DefPackage-TraderKindDef>

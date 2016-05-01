@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ResearchProjectDefs>
+
+   
+   <ResearchProjectDef>
+      <defName>PharmaMedicineProduction</defName>
+      <label>Medicine Production</label>
+      <description>Basic research in order to identify to best tools and substances required for the practice of medicine. </description>
+      <totalCost>1200</totalCost>
+
+   </ResearchProjectDef>
+   
+     <ResearchProjectDef>
+      <defName>PharmaGlitterworldMedicine</defName>
+      <label>Glitterworld Medicine Production</label>
+      <description>High-tech medical research, the goal is to find ways to reproduce or emulate the quality of care given by the average Glitterworld hospital.</description>
+      <totalCost>4000</totalCost>
+      <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+      <requiredResearchFacilities>
+         <li>MultiAnalyzer</li>
+      </requiredResearchFacilities>
+      <prerequisites>
+         <li>PharmaMedicineProduction</li>
+      </prerequisites>
+   </ResearchProjectDef>
+   
+</ResearchProjectDefs>

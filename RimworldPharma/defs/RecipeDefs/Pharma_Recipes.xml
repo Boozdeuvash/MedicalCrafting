@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+<!-- ******** REGULAR MEDICINE STUFF **********-->
+
+<RecipeDef>
+		<defName>PharmaMakeMedTools</defName>
+		<label>Craft Medical Tools</label>
+		<description>Craft Medical tools, a necessary part of medikits</description>
+		<jobString>Crafting Med tools</jobString>
+		<workAmount>1600</workAmount>
+		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Steel</li>
+			  </thingDefs>
+			</filter>
+			<count>5</count>
+		  </li>
+		  
+		</ingredients>    
+		<fixedIngredientFilter>
+		<thingDefs>
+        <li>Steel</li>
+		</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <PharmaMedTools>1</PharmaMedTools>
+		</products>
+		<skillRequirements>
+			<li>
+				<skill>Medicine</skill>
+				<minLevel>6</minLevel>
+			</li>
+		</skillRequirements>
+		<workSkill>Medicine</workSkill>
+	</RecipeDef>
+
+
+	
+	<RecipeDef>
+		<defName>PharmaMakeMedicine</defName>
+		<label>Craft Medicine</label>
+		<description>Combine Herbal meds, clothe and Medical tools to produce a real and FDA-approved med kit</description>
+		<jobString>Crafting medicine</jobString>
+		<workAmount>1600</workAmount>
+		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>HerbalMedicine</li>
+			  </thingDefs>
+			</filter>
+			<count>3</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Cloth</li>
+			  </thingDefs>
+			</filter>
+			<count>3</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>PharmaMedTools</li>
+			  </thingDefs>
+			</filter>
+			<count>1</count>
+		  </li>
+		</ingredients>    
+		<fixedIngredientFilter>
+		<thingDefs>
+        <li>HerbalMedicine</li>
+		<li>Cloth</li>
+		<li>PharmaMedTools</li>
+		</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <Medicine>1</Medicine>
+		</products>
+		<skillRequirements>
+			<li>
+				<skill>Medicine</skill>
+				<minLevel>6</minLevel>
+			</li>
+		</skillRequirements>
+		<workSkill>Medicine</workSkill>
+	</RecipeDef>
+	
+<!-- ********** GLITTERWORLD MEDICINE STUFF ********** -->	
+	
+	
+	<RecipeDef>
+		<defName>PharmaMakeAdvMedTools</defName>
+		<label>Craft Advanced med tools</label>
+		<description>Craft advanced medical tools</description>
+		<jobString>Crafting advanced med tools</jobString>
+		<workAmount>2500</workAmount>
+		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Plasteel</li>
+			  </thingDefs>
+			</filter>
+			<count>5</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Components</li>
+			  </thingDefs>
+			</filter>
+			<count>1</count>
+		  </li>
+		</ingredients>    
+		<fixedIngredientFilter>
+		<thingDefs>
+        <li>Plasteel</li>
+		<li>Components</li>
+		</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <PharmaAdvMedTools>1</PharmaAdvMedTools>
+		</products>
+		<skillRequirements>
+			<li>
+				<skill>Medicine</skill>
+				<minLevel>10</minLevel>
+			</li>
+		</skillRequirements>
+		<workSkill>Medicine</workSkill>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>PharmaMakeProtequaline</defName>
+		<label>Extract Protequaline</label>
+		<description>Use Chemistry to extract Protequaline from the desert Agave</description>
+		<jobString>Extracting Protequaline</jobString>
+		<workAmount>2500</workAmount>
+		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>RawAgave</li>
+			  </thingDefs>
+			</filter>
+			<count>10</count>
+		  </li>
+		  
+		</ingredients>    
+		<fixedIngredientFilter>
+		<thingDefs>
+        <li>RawAgave</li>
+		</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <PharmaProtequaline>1</PharmaProtequaline>
+		</products>
+		<skillRequirements>
+			<li>
+				<skill>Medicine</skill>
+				<minLevel>10</minLevel>
+			</li>
+		</skillRequirements>
+		<workSkill>Medicine</workSkill>
+	</RecipeDef>
+	
+		<RecipeDef>
+		<defName>PharmaMakeAmetrusol</defName>
+		<label>Extract Ametrusol</label>
+		<description>Use Chemistry to extract Ametrusol from Giant Insect Jelly</description>
+		<jobString>Extracting Ametrusol</jobString>
+		<workAmount>2500</workAmount>
+		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>InsectJelly</li>
+			  </thingDefs>
+			</filter>
+			<count>10</count>
+		  </li>
+		  
+		</ingredients>    
+		<fixedIngredientFilter>
+		<thingDefs>
+        <li>InsectJelly</li>
+		</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <PharmaAmetrusol>1</PharmaAmetrusol>
+		</products>
+		<skillRequirements>
+			<li>
+				<skill>Medicine</skill>
+				<minLevel>10</minLevel>
+			</li>
+		</skillRequirements>
+		<workSkill>Medicine</workSkill>
+	</RecipeDef>
+	
+	
+	<RecipeDef>
+		<defName>PharmaMakeGlitterworldMedicine</defName>
+		<label>Craft Glitterworld Medicine</label>
+		<description>Combine Medicine, advanced med tools, Ametrusol and Protequaline to produce Glitterworld Medicine.</description>
+		<jobString>Crafting Glitterworld medicine</jobString>
+		<workAmount>3000</workAmount>
+		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Medicine</li>
+			  </thingDefs>
+			</filter>
+			<count>1</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>PharmaAdvMedTools</li>
+			  </thingDefs>
+			</filter>
+			<count>1</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>PharmaAmetrusol</li>
+			  </thingDefs>
+			</filter>
+			<count>1</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>PharmaProtequaline</li>
+			  </thingDefs>
+			</filter>
+			<count>1</count>
+		  </li>
+		</ingredients>    
+		<fixedIngredientFilter>
+		<thingDefs>
+		<li>PharmaAmetrusol</li>
+        <li>PharmaProtequaline</li>
+		<li>PharmaAdvMedTools</li>
+		<li>Medicine</li>
+		</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <GlitterworldMedicine>1</GlitterworldMedicine>
+		</products>
+		<skillRequirements>
+			<li>
+				<skill>Medicine</skill>
+				<minLevel>10</minLevel>
+			</li>
+		</skillRequirements>
+		<workSkill>Medicine</workSkill>
+	</RecipeDef>
+	
+	
+</RecipeDefs>

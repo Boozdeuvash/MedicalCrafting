@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<WorkGivers> 
+
+
+ <WorkGiverDef>
+    <defName>DoBillsMakePharma</defName>
+    <label>Craft Medicine</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Doctor</workType>
+    <priorityInType>110</priorityInType>
+    <fixedBillGiverDefs>
+      <li>PharmaBench</li>
+    </fixedBillGiverDefs>
+    <verb>craft</verb>
+    <gerund>crafting at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+  
+  <WorkGiverDef>
+    <defName>DoBillsMakeAdvPharma</defName>
+    <label>Craft Medicine</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Doctor</workType>
+    <priorityInType>110</priorityInType>
+    <fixedBillGiverDefs>
+      <li>PharmaAdvBench</li>
+    </fixedBillGiverDefs>
+    <verb>craft</verb>
+    <gerund>crafting at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+  
+
+  </WorkGivers>
